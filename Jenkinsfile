@@ -11,6 +11,7 @@ pipeline {
     stage('Run Test') {
       steps {
         echo 'Test'
+        sh 'pip3 install requests'
         sh 'python3 -m pytest -v -s'
       }
     }
