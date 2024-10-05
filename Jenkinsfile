@@ -4,6 +4,7 @@ pipeline {
     stage('build') {
       steps {
         echo 'Build'
+        git branch: 'main', credentialsId: '448df686-fbb8-4108-bd3a-43231ea9ea06', url: 'https://github.com/farheen0204/APITesting.git'
       }
     }
 
