@@ -8,10 +8,10 @@ pipeline {
       }
     }
 
-    stage('Test') {
+    stage('Run Test') {
       steps {
         echo 'Test'
-        pytest -v
+        sh 'pytest -v'
       }
     }
 
